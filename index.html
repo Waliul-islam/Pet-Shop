@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Shop</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .sora-font {
+        font-family: "Sora", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .adlam-font {
+        font-family: "ADLaM Display", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      @keyframes fade-in {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .fade-in {
+        animation: fade-in 1.2s ease-in forwards;
+      }
+      @keyframes fade-out {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .fade-out {
+        animation: fade-out 1.2s ease-in forwards;
+      }
+
+    </style>
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/5747dc99b2.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Tailwind & DaisyUi -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="sora-font">
+    <header class="relative z-50">
+      <section
+        class="bg-[#FFF9F4] border-b-2 border-b-slate-400 sm:border-none"
+      >
+        <nav
+          class="md:container px-3 md:px-0 mx-auto py-5 flex items-center justify-between"
+        >
+          <div class="flex items-center gap-2">
+            <img src="./assets/nav-icon.png" alt="" />
+            <h5 class="hidden md:block text-2xl">
+              Browse <span class="text-[#FFDC26]">4</span> Pets
+            </h5>
+          </div>
+          <div>
+            <ul class="hidden lg:flex gap-6">
+              <li><a href="#" class="text-xl">Find a pet</a></li>
+              <li><a href="#" class="text-xl">Breeds</a></li>
+              <li><a href="#" class="text-xl">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="hidden md:flex md:items-center md:gap-4">
+            <i class="fa-regular fa-bell text-2xl"></i>
+            <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+            <button
+              class="px-7 py-2 text-xl border border-1 rounded-lg cursor-pointer border-[#FFDC26] hover:bg-[#FFDC26]"
+            >
+              Login
+            </button>
+            <button
+              class="px-7 py-2 text-xl rounded-lg cursor-pointer bg-[#FFDC26] hover:bg-[#f8d132]"
+            >
+              Register
+            </button>
+          </div>
+          <i class="fa-solid fa-bars text-3xl md:hidden"></i>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <!-- Banner section -->
+      <section class="md:container mx-auto my-8 lg:my-20 px-3 md:px-0 relative">
+        <div
+          class="space-y-5 md:space-y-7 lg:w-6/12 z-20 absolute fade-in"
+        >
+          <h2 class="adlam-font text-4xl lg:text-6xl">
+            Pamper Your Pet, <br />
+            Because They Deserve the Best
+          </h2>
+          <p class="leading-7">
+            Find your perfect furry companion and everything they need at our
+            pet shop where love, care, and happiness come together.
+          </p>
+          <button
+            class="px-7 py-2 text-xl rounded-lg cursor-pointer bg-[#FFDC26] hover:bg-[#f8d132]"> Find a Pet
+          </button>
+        </div>
+        <div
+          class="bg-[url('./assets/cat-big.png')] bg-contain bg-no-repeat w-full absolute aspect-[16/9] top-56 right-1 md:top-20 lg:-top-0 xl:-top-20 z-10 fade-out"
+        ></div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
+<!-- h-72 md:h-[450px] lg:h-[750px]  -->
